@@ -1,4 +1,9 @@
-Startup
+Symfony and ReactJS
 =======
 
-A Symfony project created on December 24, 2017, 11:57 am.
+Useful commands:
+<br>
+`./node_modules/.bin/webpack -d`
+<br>
+`npm install`
+<br>
