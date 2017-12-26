@@ -4,6 +4,10 @@
   "license": "MIT",
   "author": "Mantas Kemsius",
   "repository": "",
+  "scripts": {
+    "start": "node_modules/.bin/webpack --watch",
+    "webpack": "node_modules/.bin/webpack"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
