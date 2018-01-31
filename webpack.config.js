@@ -1,13 +1,12 @@
 const webpack = require('webpack');
 const path = require('path');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     entry: {
         app: [
-            path.resolve(__dirname, './app/Resources/assets/sass/style.scss'),
+            path.resolve(__dirname, './app/Resources/assets/scss/style.scss'),
             path.resolve(__dirname, './app/Resources/assets/js/app.js')
         ],
         vendor: [
@@ -52,30 +51,6 @@ module.exports = {
                     ]
                 })
             },
-            {
-                test: /\.(png|jpg|jpeg|gif|ico|svg)$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: './assets/[name].[ext]',
-                            publicPath: "/build/"
-                        }
-                    }
-                ]
-            },
-            {
-                test: /\.(woff|woff2|eot|ttf|otf)$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: './assets/[name].[ext]',
-                            publicPath: "/build/"
-                        }
-                    }
-                ]
-            }
         ]
     },
     plugins: [
@@ -91,16 +66,6 @@ module.exports = {
             filename: 'js/vendor.js',
             minChunks: Infinity
         }),
-        // new CopyWebpackPlugin([
-        //     {
-        //         from: path.resolve(__dirname, './src/AppBundle/Resources/images/'),
-        //         to: 'images'
-        //     },
-        //     {
-        //         from: path.resolve(__dirname, './src/AppBundle/Resources/demo/'),
-        //         to: '../images/items'
-        //     }
-        // ]),
         new ExtractTextPlugin({
             filename: './css/style.css',
             allChunks: true
