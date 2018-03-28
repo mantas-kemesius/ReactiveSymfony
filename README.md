@@ -11,6 +11,7 @@ This is just template for your new project working with Symfony and React.
 
 *Useful commands (scripts)*:
 To install Symfony dependencies:
+<br>
 `composer install` || `composer update`
 <br>
 `npm install`
