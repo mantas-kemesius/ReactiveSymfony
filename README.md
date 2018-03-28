@@ -19,10 +19,8 @@ To install Symfony dependencies:
 <br>
 1. `composer install` or `composer update`
 2. Run server:
-<br> 
-`cd ReactiveSymfony`
-<br>
-`./bin/console server:run`
+2.1 `cd ReactiveSymfony`
+2.2`./bin/console server:run`
 <br>
 <br>
 Working with NPM (scripts):
