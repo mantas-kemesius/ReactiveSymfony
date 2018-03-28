@@ -10,11 +10,15 @@ This is just template for your new project working with Symfony and React.
 4. Scss
 
 *Useful commands (scripts)*:
+<br>
 To install Symfony dependencies:
 <br>
 `composer install` || `composer update`
 <br>
-`npm install`
 <br>
-`npm start`
+Working with NPM (scripts):
+<br>
+1. To install all modules run: `npm install`
+<br>
+2. To run live assets checker: `npm start`
 <br>
