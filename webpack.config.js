@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
@@ -51,6 +52,18 @@ module.exports = {
                     ]
                 })
             },
+            {
+                test: /\.(png|jpg|jpeg|gif|ico|svg)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: './assets/[name].[ext]',
+                            publicPath: "/build/"
+                        }
+                    }
+                ]
+            },
         ]
     },
     plugins: [
@@ -66,6 +79,12 @@ module.exports = {
             filename: 'js/vendor.js',
             minChunks: Infinity
         }),
+        new CopyWebpackPlugin([
+            {
+                from: path.resolve(__dirname, './app/Resources/assets/images/'),
+                to: 'images'
+            }
+        ]),
         new ExtractTextPlugin({
             filename: './css/style.css',
             allChunks: true
