@@ -23,5 +23,5 @@ To install Symfony dependencies:
 <br>
 Working with NPM (scripts):
 <br>
-1. To install all modules run: `npm install`
+1. To install all modules run: `npm install`<br>
 2. To run live assets checker: `npm start`
