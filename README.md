@@ -11,9 +11,15 @@ This is just template for your new project working with Symfony and React.
 
 *Useful commands (scripts)*:
 <br>
+Download:
+1. git clone `https://github.com/mantas-kemesius/ReactiveSymfony/`
+<br>
 To install Symfony dependencies:
 <br>
-`composer install` || `composer update`
+1. `composer install` or `composer update`
+2. Run server: 
+2.1 `cd ReactiveSymfony`
+2.2 `./bin/console server:run`
 <br>
 <br>
 Working with NPM (scripts):
