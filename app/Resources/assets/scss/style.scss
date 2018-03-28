@@ -1,44 +1,17 @@
-//@import '~font-awesome/css/font-awesome.css';
-//@import 'components/box';
-//@import 'components/tabs';
-//@import 'components/form';
-//@import 'components/embedded-form';
-//@import 'components/typography';
-//@import 'components/utilities';
-//@import '../components/utilities';
-//@import 'components/sidebar';
-//@import 'components/login';
-//@import 'components/content';
-//@import 'components/submenu-toggler';
-///* ---------------------------------------------------
-//    DATATABLES
-//----------------------------------------------------- */
-//@import 'components/datatables';
-//
-//body {
-//  background: rgba(236, 239, 239, 1);
-//}
-//
-///* ---------------------------------------------------
-//    CONTENT STYLE
-//----------------------------------------------------- */
-//#content {
-//  min-height: 100vh;
-//  width: 100%;
-//}
-//
-//.content {
-//  &--with-padding {
-//    padding: 20px;
-//  }
-//}
-//
+/* ---------------------------------------------------
+    Import example
+----------------------------------------------------- */
+@import 'components/container.scss';
 
+///* ---------------------------------------------------
+//    SCSS Code example
+//----------------------------------------------------- */
 body{
-  font-family: 'Open Sans', serif;
+  margin:0;
+  padding:0;
+  background: #000000;
 }
-.container{
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-weight: 600;
-  font-style: italic;
+
+h3{
+  font-size:16px;
 }

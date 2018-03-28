@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
 
-    <title>{% block title %}Contactify{% endblock %}</title>
+    <title>{% block title %}ReactiveSymfony{% endblock %}</title>
 
     <!--Fonts-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -13,13 +13,16 @@
     <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
     <!-- App style -->
-    <link rel="stylesheet" href="{{ asset('build/css/style.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('assets/build/css/style.css') }}"/>
 
 </head>
 
 <body>
 
-{% block body %}{% endblock %}
+    <h1 align = "center">Welcome to ReactiveSymfony 3.4 App</h1>
+    <h3 align = "center">This container was made with ReactJS :)</h3>
+
+    {% block body %}{% endblock %}
 
     <!--JavaScript-->
     <script src="{{ asset('assets/build/js/vendor.js') }}"></script>
