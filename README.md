@@ -25,4 +25,3 @@ Working with NPM (scripts):
 <br>
 1. To install all modules run: `npm install`
 2. To run live assets checker: `npm start`
-<br>
