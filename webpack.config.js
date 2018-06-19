@@ -12,10 +12,7 @@ module.exports = {
         ],
         vendor: [
             'react',
-            'react-dom',
-            'jquery',
-            'select2',
-            'bootstrap-sass',
+            'react-dom'
         ]
     },
     output: {
@@ -69,10 +66,6 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(['build'], {
             root: path.resolve(__dirname, './web')
-        }),
-        new webpack.ProvidePlugin({
-            jQuery: 'jquery',
-            $: 'jquery'
         }),
         new webpack.optimize.CommonsChunkPlugin({
             name: 'vendor',
